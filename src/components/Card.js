@@ -19,7 +19,8 @@ const Card = ({ data, deleteCard, index, color }) => {
         </ul>
       </div>
 
-      <div className={s.cardText} contentEditable suppressContentEditableWarning={true}>{data.text}</div>
+      <div className={s.cardText}>{data.text}</div>
+      {/* <div className={s.cardText} contentEditable suppressContentEditableWarning={true}>{data.text}</div> */}
     </div>
   )
 }
