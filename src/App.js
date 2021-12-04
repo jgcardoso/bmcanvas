@@ -150,11 +150,10 @@ function App() {
     <div className="App">
       <Header />
 
-
       <div className={`${s.app} container`}>
 
         <div className={`${s.boardActions} mb-2`}>
-          <button className="btn btn-primary btn-sm" onClick={resetCanvas}>Clear canvas</button>
+          <button className="btn btn-primary btn-sm" onClick={resetCanvas}>Erase canvas</button>
         </div>
         <div className={s.board}>
           
