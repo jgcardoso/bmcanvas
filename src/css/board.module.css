@@ -1,0 +1,93 @@
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  min-height: 300px;
+  z-index: 0;
+  border-radius: 2px;
+  box-shadow: rgb(9 30 66 / 25%) 0px 1px 1px, rgb(9 30 66 / 31%) 0px 0px 1px;
+  transition: .2s;
+}
+
+.column:hover {
+  z-index: 1;
+}
+
+.column:nth-child(1) { grid-area: area1 }
+.column:nth-child(2) { grid-area: area2 }
+.column:nth-child(3) { grid-area: area3 }
+.column:nth-child(4) { grid-area: area4 }
+.column:nth-child(5) { grid-area: area5 }
+.column:nth-child(6) { grid-area: area6 }
+.column:nth-child(7) { grid-area: area7 }
+
+.column:nth-child(8) {
+  grid-area: area8;
+  width: calc(100% + 25.4%);
+}
+
+.column:nth-child(9) {
+  position: relative;
+  left: -25.4%; 
+  grid-area: area9;
+  width: calc(100% + 25.4%);
+}
+
+.header {
+  position: relative;
+  padding: 0 0 15px;
+}
+
+.header h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+  height: 45px;
+  max-width: 140px;
+}
+
+.description {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  opacity: .7;
+  font-size: .7rem;
+  user-select: none;
+  z-index: -1;
+  max-width: 80%;
+}
+
+.cards {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputCreateCard {
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  padding: 5px 10px;
+  background: #EFEFEF;
+}
+
+.inputCreateCard input {
+  height: 30px;
+  font-size: .8rem;
+  background-color: transparent;
+  border: none;
+  padding-right: 40px;
+}
+
+.inputCreateCard button {
+  position: absolute;
+  top: 6px;
+  right: 11px;
+  padding: 1px 5px;
+}

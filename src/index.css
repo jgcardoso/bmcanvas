@@ -1,0 +1,35 @@
+
+:root {
+  --color-primary: #2178FB;
+  --color-bg: #EFEFEF;
+  --color-yellow: #F7D376;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  min-width: 1100px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+ 
+/* Ajustes dos cards nas ultimas colunas do board */
+.column7 > div:nth-child(2),
+.column8 > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: flex-start;
+  gap: 10px;
+}

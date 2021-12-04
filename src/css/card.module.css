@@ -1,0 +1,44 @@
+
+.card {
+  padding: 10px;
+  background-color: var(--color-yellow);
+  border-radius: 2px;
+  box-shadow: rgb(9 30 66 / 25%) 0px 1px 1px, rgb(9 30 66 / 31%) 0px 0px 1px;
+  margin-bottom: 10px;
+  border: 0;
+}
+
+.cardHeader {
+  background-color: rgba(0, 0, 0, 0.07);
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 1px 10px;
+  margin-bottom: 10px;
+}
+
+.cardHeader ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.cardHeaderBtn {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cardHeaderBtn:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+
+}
+
+.cardText {
+  flex: 1;
+  outline: none;
+  font-size: .9rem;
+  cursor:text;
+}
